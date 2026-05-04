@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Email Masker </title>
-</head>
-<body>
-   <script>
-   	   // mask username
+ // mask username
 		  function  maskEmail (email ) {
 		        	 const lastCharacter =  email.indexOf("@") - 1;
 		        	 const sliceCharater =  email.slice(1, lastCharacter);
@@ -28,7 +19,3 @@
 
 		  email = "user@domain.org";
 		  console.log(maskEmail(email));
-
-   </script>
-</body>
-</html>
