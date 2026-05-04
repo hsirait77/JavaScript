@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email Masker </title>
+</head>
+<body>
+   <script>
+   	   // mask username
+		  function  maskEmail (email ) {
+		        	 const lastCharacter =  email.indexOf("@") - 1;
+		        	 const sliceCharater =  email.slice(1, lastCharacter);
+
+		        	 const asterisks = "*";
+		        	 const paternStar = asterisks.repeat(sliceCharater.length);
+
+		        	 const showCarachterStar = sliceCharater.replace(sliceCharater, paternStar);
+
+		        	  return email[0] + showCarachterStar + email.slice(lastCharacter);
+		  }
+
+		  let email = "apple.pie@example.com";
+		  console.log(maskEmail(email));
+
+		  email = "freecodecamp@example.com";
+		  console.log(maskEmail(email));  
+
+		  email = "user@domain.org";
+		  console.log(maskEmail(email));
+
+   </script>
+</body>
+</html>
