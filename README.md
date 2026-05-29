@@ -1,2 +1,1 @@
-# JavaScript
-repo for project javascript
+# Repo for learning JavaScript
